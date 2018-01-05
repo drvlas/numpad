@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Window</class>
+ <widget class="QMainWindow" name="Window">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,14 +11,19 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Window</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontal_layout">
       <item>
-       <widget class="QLabel" name="ParTxt_label">
+       <widget class="QLabel" name="lab_txt">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
         <property name="frameShape">
          <enum>QFrame::Box</enum>
         </property>
@@ -34,7 +39,12 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="ParVal_label">
+       <widget class="QLabel" name="lab_val">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
         <property name="frameShape">
          <enum>QFrame::Box</enum>
         </property>
@@ -52,7 +62,12 @@
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="Modify_pushButton">
+     <widget class="QPushButton" name="pb_modify">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
       <property name="contextMenuPolicy">
        <enum>Qt::DefaultContextMenu</enum>
       </property>
@@ -62,7 +77,12 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="Counter_label">
+     <widget class="QLabel" name="lab_cnt">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Counter</string>
       </property>
@@ -79,7 +99,7 @@
      <x>0</x>
      <y>0</y>
      <width>240</width>
-     <height>26</height>
+     <height>27</height>
     </rect>
    </property>
   </widget>

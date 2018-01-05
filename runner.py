@@ -4,7 +4,7 @@
 Main executable module
 """
 from PyQt5 import QtWidgets
-from ui.MainWindow import MainWindow
+from ui.window import MainWindow
 
 if __name__ == "__main__":
     import sys
@@ -12,4 +12,3 @@ if __name__ == "__main__":
     ui = MainWindow()
     ui.show()
     sys.exit(app.exec_())
-    

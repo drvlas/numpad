@@ -2,9 +2,12 @@
 """
 Tables, constants
 """
+MAX_DIG = 9
+MAX_VAL = 999999999     # 9 nines
+
 point10Power = {
             -1:('{: 011d}', 1, 1),
-            0: ('{: 011.0f}', 1, 1),
+            0: ('{: 011d}.', 1, 1),
             1: ('{: 011.1f}', 10, 0.1),
             2: ('{: 011.2f}', 100, 0.01),
             3: ('{: 011.3f}', 1000, 0.001),
@@ -23,7 +26,7 @@ RIGHT_SHIFT = 2
 #point10Power[self.point][LEFT_SHIFT]
 #point10Power[self.point][RIGHT_SHIFT]
 
-# NumPad result
+# NumPad result index
 VALID = 0
 VAL = 1
 PNT = 2
